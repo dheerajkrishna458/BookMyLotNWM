@@ -33,4 +33,8 @@ public class MainActivity extends AppCompatActivity {
     public void success(View v){
         setContentView(R.layout.reservesuccess);
     }
+    public void cancel(View v){
+        setContentView(R.layout.parkingplace);
+    }
+
 }
