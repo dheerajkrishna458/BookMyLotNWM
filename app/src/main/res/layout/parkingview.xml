@@ -2,6 +2,7 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:background="#B3E5FC"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -21,17 +22,17 @@
         android:layout_width="wrap_content"
         android:layout_height="705dp"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="12dp"
         app:columnCount="7"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.47"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ParkingName"
         app:rowCount="3">
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="125dp"
+            android:layout_width="127dp"
             android:layout_height="wrap_content"
             android:onClick="reserve"
             android:text="slot 1"
@@ -40,7 +41,7 @@
 
         <Button
             android:id="@+id/button3"
-            android:layout_width="163dp"
+            android:layout_width="135dp"
             android:layout_height="wrap_content"
             android:text="slot2"
             app:layout_column="1"
@@ -56,7 +57,7 @@
 
         <Button
             android:id="@+id/button5"
-            android:layout_width="134dp"
+            android:layout_width="131dp"
             android:layout_height="wrap_content"
             android:text="slot4"
             android:visibility="visible"
@@ -66,7 +67,7 @@
 
         <Button
             android:id="@+id/button6"
-            android:layout_width="160dp"
+            android:layout_width="134dp"
             android:layout_height="wrap_content"
             android:text="slot5"
             app:layout_column="1"
@@ -74,7 +75,7 @@
 
         <Button
             android:id="@+id/button7"
-            android:layout_width="99dp"
+            android:layout_width="103dp"
             android:layout_height="wrap_content"
             android:text="slot6"
             app:layout_column="2"
@@ -82,7 +83,7 @@
 
         <Button
             android:id="@+id/button8"
-            android:layout_width="134dp"
+            android:layout_width="128dp"
             android:layout_height="wrap_content"
             android:text="slot7"
             app:layout_column="0"
@@ -90,7 +91,7 @@
 
         <Button
             android:id="@+id/button9"
-            android:layout_width="148dp"
+            android:layout_width="133dp"
             android:layout_height="wrap_content"
             android:text="slot8"
             app:layout_column="1"

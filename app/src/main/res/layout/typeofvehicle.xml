@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#B3E5FC"
     android:layout_gravity="center_horizontal|center_vertical">
 
     <RadioButton
@@ -51,6 +52,8 @@
         android:layout_marginTop="50dp"
         android:onClick="next2"
         android:text="next"
+        android:textColor="@color/black"
+        android:backgroundTint="#B0BEC5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Handicap" />
 </android.support.constraint.ConstraintLayout>
