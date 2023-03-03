@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal|center_vertical">
+
+    <RadioButton
+        android:id="@+id/MotorcycleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="158dp"
+        android:text="Motorcycle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioButton
+        android:id="@+id/CarButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:text="Car"
+        app:layout_constraintStart_toStartOf="@id/MotorcycleButton"
+        app:layout_constraintTop_toBottomOf="@+id/MotorcycleButton" />
+
+    <RadioButton
+        android:id="@+id/BikeracksButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="41dp"
+        android:text="Bike Racks"
+        app:layout_constraintStart_toStartOf="@id/CarButton"
+        app:layout_constraintTop_toBottomOf="@+id/CarButton" />
+
+    <RadioButton
+        android:id="@+id/Handicap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:text="Handicap"
+        app:layout_constraintStart_toStartOf="@id/CarButton"
+        app:layout_constraintTop_toBottomOf="@+id/BikeracksButton" />
+
+    <Button
+        android:id="@+id/next2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="50dp"
+        android:onClick="next2"
+        android:text="next"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Handicap" />
+</android.support.constraint.ConstraintLayout>
