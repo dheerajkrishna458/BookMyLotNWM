@@ -21,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="27dp"
-        android:text="StudentButton"
+        android:text="Student"
         android:visibility="visible"
         app:layout_constraintStart_toStartOf="@id/FacultyButton"
         app:layout_constraintTop_toBottomOf="@+id/FacultyButton"
@@ -32,7 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="29dp"
-        android:text="VisitorButton"
+        android:text="Visitor"
         app:layout_constraintStart_toStartOf="@id/StudentButton"
         app:layout_constraintTop_toBottomOf="@+id/StudentButton" />
 
@@ -48,4 +48,16 @@
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/VisitorButton" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Type"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="128dp" />
 </android.support.constraint.ConstraintLayout>
