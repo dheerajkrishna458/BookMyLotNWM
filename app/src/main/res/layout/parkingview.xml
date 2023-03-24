@@ -2,7 +2,6 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#B3E5FC"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -22,17 +21,17 @@
         android:layout_width="wrap_content"
         android:layout_height="705dp"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="8dp"
         app:columnCount="7"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintHorizontal_bias="0.466"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ParkingName"
         app:rowCount="3">
 
         <Button
             android:id="@+id/button2"
-            android:layout_width="127dp"
+            android:layout_width="121dp"
             android:layout_height="wrap_content"
             android:onClick="reserve"
             android:text="slot 1"
@@ -41,15 +40,15 @@
 
         <Button
             android:id="@+id/button3"
-            android:layout_width="135dp"
-            android:layout_height="wrap_content"
+            android:layout_width="137dp"
+            android:layout_height="38dp"
             android:text="slot2"
             app:layout_column="1"
             app:layout_row="0" />
 
         <Button
             android:id="@+id/button4"
-            android:layout_width="103dp"
+            android:layout_width="115dp"
             android:layout_height="wrap_content"
             android:text="slot3"
             app:layout_column="2"
@@ -57,7 +56,7 @@
 
         <Button
             android:id="@+id/button5"
-            android:layout_width="131dp"
+            android:layout_width="127dp"
             android:layout_height="wrap_content"
             android:text="slot4"
             android:visibility="visible"
@@ -67,7 +66,7 @@
 
         <Button
             android:id="@+id/button6"
-            android:layout_width="134dp"
+            android:layout_width="135dp"
             android:layout_height="wrap_content"
             android:text="slot5"
             app:layout_column="1"
@@ -75,7 +74,7 @@
 
         <Button
             android:id="@+id/button7"
-            android:layout_width="103dp"
+            android:layout_width="118dp"
             android:layout_height="wrap_content"
             android:text="slot6"
             app:layout_column="2"
@@ -83,7 +82,7 @@
 
         <Button
             android:id="@+id/button8"
-            android:layout_width="128dp"
+            android:layout_width="130dp"
             android:layout_height="wrap_content"
             android:text="slot7"
             app:layout_column="0"
@@ -91,7 +90,7 @@
 
         <Button
             android:id="@+id/button9"
-            android:layout_width="133dp"
+            android:layout_width="131dp"
             android:layout_height="wrap_content"
             android:text="slot8"
             app:layout_column="1"
@@ -99,7 +98,7 @@
 
         <Button
             android:id="@+id/button10"
-            android:layout_width="106dp"
+            android:layout_width="120dp"
             android:layout_height="wrap_content"
             android:text="slot8"
             app:layout_column="2"

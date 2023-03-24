@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+
+    <EditText
+        android:id="@+id/usernamenew"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="104dp"
+        android:hint="User Name"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/passwordnew"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/usernamenew"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="192dp"
+        android:hint="Password"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="@id/usernamenew"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/repasswordnew"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/passwordnew"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="49dp"
+        android:hint="Retype Password"
+        android:minHeight="48dp"
+        app:layout_constraintStart_toStartOf="@id/passwordnew"
+        app:layout_constraintTop_toBottomOf="@+id/passwordnew" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="82dp"
+        android:text="Register"
+        app:layout_constraintStart_toStartOf="@id/repasswordnew"
+        app:layout_constraintTop_toBottomOf="@+id/repasswordnew" />
+
+    <Button
+        android:id="@+id/backtosignin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="504dp"
+        android:onClick="backtosignin"
+        android:text="Existing user! Go to Sign in page"
+        app:layout_constraintStart_toStartOf="@id/register"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
