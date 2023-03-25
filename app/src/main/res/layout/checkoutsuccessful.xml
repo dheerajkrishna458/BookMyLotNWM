@@ -15,7 +15,7 @@
         android:layout_marginTop="204dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/tick" />  
+        app:srcCompat="@drawable/tick" />
 
     <TextView
         android:id="@+id/textView4"

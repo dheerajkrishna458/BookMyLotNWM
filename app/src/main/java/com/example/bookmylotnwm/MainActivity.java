@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
-    public void signup(View v){
+    public void signup(View v) {
         setContentView(R.layout.new_user_registration);
         EditText username, password, repassword;
         Button signup, signin;
@@ -95,27 +95,27 @@ public class MainActivity extends AppCompatActivity {
                 String pass = password.getText().toString();
                 String repass = repassword.getText().toString();
 
-                if(user.equals("")||pass.equals("")||repass.equals(""))
+                if (user.equals("") || pass.equals("") || repass.equals(""))
                     Toast.makeText(MainActivity.this, "Please enter all the fields", Toast.LENGTH_SHORT).show();
-                else{
-                    if(pass.equals(repass)){
+                else {
+                    if (pass.equals(repass)) {
                         Boolean checkuser = DB.checkusername(user);
-                        if(checkuser==false){
+                        if (checkuser == false) {
                             Boolean insert = DB.insertData(user, pass);
-                            if(insert==true){
+                            if (insert == true) {
                                 Toast.makeText(MainActivity.this, "Registered successfully", Toast.LENGTH_SHORT).show();
                                 setContentView(R.layout.new_reservation);
-                            }else{
+                            } else {
                                 Toast.makeText(MainActivity.this, "Registration failed", Toast.LENGTH_SHORT).show();
                             }
-                        }
-                        else{
+                        } else {
                             Toast.makeText(MainActivity.this, "User already exists! please sign in", Toast.LENGTH_SHORT).show();
                         }
-                    }else{
+                    } else {
                         Toast.makeText(MainActivity.this, "Passwords not matching", Toast.LENGTH_SHORT).show();
                     }
-                } }
+                }
+            }
         });
 
         signin.setOnClickListener(new View.OnClickListener() {
@@ -124,4 +124,61 @@ public class MainActivity extends AppCompatActivity {
                 setContentView(R.layout.activity_main);
             }
         });
-    }}
+    }
+    public void backtosignin(View v){setContentView(R.layout.activity_main);}
+    public void newreservation(View v){setContentView(R.layout.type);}
+    public void next1(View v){setContentView(R.layout.typeofvehicle);}
+    public void next2(View v){setContentView(R.layout.parkingplace);}
+    public void reserve(View v){
+        setContentView(R.layout.reservation);
+    }
+    public void success(View v){
+        if(reservationcount==0){
+            setContentView(R.layout.reservesuccess);
+            reservationcount++;
+        }
+        else {
+
+        }
+    }
+    public void cancel(View v){
+        setContentView(R.layout.parkingplace);
+    }
+    public void parkingviewLibrary(View v){
+        setContentView(R.layout.parkingview);
+        TextView tv= (TextView) findViewById(R.id.ParkingName);
+        tv.setText("Library Parking");
+    }
+    public void parkingviewGarretStrong(View v){
+        setContentView(R.layout.parkingview);
+        TextView tv= (TextView) findViewById(R.id.ParkingName);
+        tv.setText("Garret Strong Parking");
+    }
+    public void parkingviewAdministrativeBlock(View v){
+        setContentView(R.layout.parkingview);
+        TextView tv= (TextView) findViewById(R.id.ParkingName);
+        tv.setText("Administration Block Parking");
+    }
+    public void parkingviewValkCenter(View v){
+        setContentView(R.layout.parkingview);
+        TextView tv= (TextView) findViewById(R.id.ParkingName);
+        tv.setText("Valk Center Parking");
+    }
+    public void parkingviewWellHall(View v){
+        setContentView(R.layout.parkingview);
+        TextView tv= (TextView) findViewById(R.id.ParkingName);
+        tv.setText("Wells Hall Parking");
+    }
+    public void parkingviewStudentUnion(View v){
+        setContentView(R.layout.parkingview);
+        TextView tv= (TextView) findViewById(R.id.ParkingName);
+        tv.setText("Student Union Parking");
+    }
+    public void backtotype(View v){setContentView(R.layout.type);}
+    public void backtotypeofvehicle(View v){setContentView(R.layout.typeofvehicle);}
+    public void backtoparkingplace(View v){setContentView(R.layout.parkingplace);}
+    public void backtoparkingview(View v){setContentView(R.layout.parkingview);}
+    public void backtonewreservation(View v){setContentView(R.layout.new_reservation);}
+
+}
+
