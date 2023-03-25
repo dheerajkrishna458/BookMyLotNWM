@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     EditText username, password;
     Button btnlogin;
     DBHelper DB;
-    int reservationcount=0; 
+    int reservationcount=0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
                 String pass = password.getText().toString();
 
                 if(user.equals("")||pass.equals(""))
-                    Toast.makeText(MainActivity.this, "Please enter all the fields", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Please fillup all the fields", Toast.LENGTH_SHORT).show();
                 else{
                     Boolean checkuserpass = DB.checkusernamepassword(user, pass);
                     if(checkuserpass==true){
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         String pass = password.getText().toString();
 
         if (user.equals("") || pass.equals(""))
-            Toast.makeText(MainActivity.this, "Please enter all the fields", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, "Please fillup all the fields", Toast.LENGTH_SHORT).show();
         else {
             Boolean checkuserpass = DB.checkusernamepassword(user, pass);
             if (checkuserpass == true) {
