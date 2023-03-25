@@ -28,7 +28,6 @@
         android:hint="Password"
         android:minHeight="48dp"
         app:layout_constraintStart_toStartOf="@id/usernamenew"
-
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText

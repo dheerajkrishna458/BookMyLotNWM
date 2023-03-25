@@ -2,9 +2,10 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="#B3E5FC"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="#B3E5FC"
+    android:onClick="backtotypeofvehicle">
 
     <TextView
         android:id="@+id/titleParkingLotlist"
@@ -40,10 +41,10 @@
                 android:id="@+id/LibraryButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:onClick="parkingview"
+                android:backgroundTint="#B0BEC5"
+                android:onClick="parkingviewLibrary"
                 android:text="Library"
                 android:textColor="@color/black"
-                android:backgroundTint="#B0BEC5"
                 app:layout_column="0"
                 app:layout_row="0" />
 
@@ -51,9 +52,10 @@
                 android:id="@+id/garretstrongButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="#B0BEC5"
+                android:onClick="parkingviewGarretStrong"
                 android:text="Garret Strong"
                 android:textColor="@color/black"
-                android:backgroundTint="#B0BEC5"
                 app:layout_column="0"
                 app:layout_row="1" />
 
@@ -61,9 +63,10 @@
                 android:id="@+id/AdministrationButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="#B0BEC5"
+                android:onClick="parkingviewAdministrativeBlock"
                 android:text="Administration Block"
                 android:textColor="@color/black"
-                android:backgroundTint="#B0BEC5"
                 app:layout_column="0"
                 app:layout_row="2" />
 
@@ -71,9 +74,10 @@
                 android:id="@+id/ValkButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="#B0BEC5"
+                android:onClick="parkingviewValkCenter"
                 android:text=" valk center"
                 android:textColor="@color/black"
-                android:backgroundTint="#B0BEC5"
                 app:layout_column="0"
                 app:layout_row="3" />
 
@@ -81,9 +85,10 @@
                 android:id="@+id/WellsButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="#B0BEC5"
+                android:onClick="parkingviewWellHall"
                 android:text="Wells Hall"
                 android:textColor="@color/black"
-                android:backgroundTint="#B0BEC5"
                 app:layout_column="0"
                 app:layout_row="4" />
 
@@ -91,12 +96,27 @@
                 android:id="@+id/StudentunionButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:backgroundTint="#B0BEC5"
+                android:onClick="parkingviewStudentUnion"
                 android:text="Student Union"
                 android:textColor="@color/black"
-                android:backgroundTint="#B0BEC5"
                 app:layout_column="0"
                 app:layout_row="5" />
         </android.support.v7.widget.GridLayout>
+
     </android.support.v7.widget.GridLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="480dp"
+        android:background="#03A9F4"
+        android:onClick="backtotypeofvehicle"
+        android:text="Back"
+        android:textColor="#FAF6F6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

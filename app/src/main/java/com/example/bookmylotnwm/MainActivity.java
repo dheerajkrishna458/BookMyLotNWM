@@ -181,4 +181,3 @@ public class MainActivity extends AppCompatActivity {
     public void backtonewreservation(View v){setContentView(R.layout.new_reservation);}
 
 }
-
