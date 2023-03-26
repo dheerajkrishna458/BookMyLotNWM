@@ -6,6 +6,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="52dp"
+        android:background="#03A9F4"
+        android:onClick="backtoparkingview"
+        android:text="Back"
+        android:textColor="#FAF6F6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
@@ -19,6 +31,7 @@
         android:id="@+id/textView"
         android:layout_width="374dp"
         android:layout_height="33dp"
+        android:gravity="center_horizontal|center_vertical"
         android:text="Your Booking has been Confirmed!"
         android:textColor="@color/black"
         android:textSize="20dp"

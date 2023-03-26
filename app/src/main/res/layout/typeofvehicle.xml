@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal|center_vertical"
     android:background="#B3E5FC"
-    android:layout_gravity="center_horizontal|center_vertical">
+    android:onClick="backtotype">
 
     <RadioButton
         android:id="@+id/MotorcycleButton"
@@ -13,6 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="146dp"
         android:layout_marginTop="158dp"
+        android:minHeight="48dp"
         android:text="Motorcycle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -22,6 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="41dp"
+        android:minHeight="48dp"
         android:text="Car"
         app:layout_constraintStart_toStartOf="@id/MotorcycleButton"
         app:layout_constraintTop_toBottomOf="@+id/MotorcycleButton" />
@@ -31,6 +34,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="41dp"
+        android:minHeight="48dp"
         android:text="Bike Racks"
         app:layout_constraintStart_toStartOf="@id/CarButton"
         app:layout_constraintTop_toBottomOf="@+id/CarButton" />
@@ -40,6 +44,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="47dp"
+        android:minHeight="48dp"
         android:text="Handicap"
         app:layout_constraintStart_toStartOf="@id/CarButton"
         app:layout_constraintTop_toBottomOf="@+id/BikeracksButton" />
@@ -48,12 +53,12 @@
         android:id="@+id/next2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="150dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginStart="304dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="#B0BEC5"
         android:onClick="next2"
         android:text="next"
         android:textColor="@color/black"
-        android:backgroundTint="#B0BEC5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Handicap" />
 
@@ -61,11 +66,26 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="146dp"
+        android:layout_marginTop="77dp"
         android:text="Vehicle Type"
-        android:textStyle="bold"
-        android:textSize="20dp"
         android:textColor="@color/black"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="134dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="536dp"
+        android:background="#03A9F4"
+        android:onClick="backtotype"
+        android:text="Back"
+        android:textColor="#FAF6F6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </android.support.constraint.ConstraintLayout>

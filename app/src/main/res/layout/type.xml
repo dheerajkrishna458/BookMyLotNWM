@@ -6,6 +6,19 @@
     android:background="#B3E5FC"
     android:layout_height="match_parent">
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="372dp"
+        android:background="#03A9F4"
+        android:onClick="backtonewreservation"
+        android:text="Back"
+        android:textColor="#FAF6F6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <RadioButton
         android:id="@+id/FacultyButton"
         android:layout_width="wrap_content"
@@ -40,11 +53,12 @@
         android:id="@+id/next1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="146dp"
-        android:layout_marginTop="73dp"
+        android:layout_marginStart="292dp"
+        android:layout_marginTop="80dp"
+        android:background="#D83864E6"
+        android:backgroundTint="#B0BEC5"
         android:onClick="next1"
         android:text="next"
-        android:backgroundTint="#B0BEC5"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/VisitorButton" />
@@ -53,11 +67,13 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="66dp"
         android:text="User Type"
         android:textColor="@color/black"
         android:textSize="20dp"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="128dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 </android.support.constraint.ConstraintLayout>

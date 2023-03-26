@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
                 String pass = password.getText().toString();
 
                 if(user.equals("")||pass.equals(""))
-                    Toast.makeText(MainActivity.this, "Please fillup all the fields", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Please enter all the fields", Toast.LENGTH_SHORT).show();
                 else{
                     Boolean checkuserpass = DB.checkusernamepassword(user, pass);
                     if(checkuserpass==true){
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         String pass = password.getText().toString();
 
         if (user.equals("") || pass.equals(""))
-            Toast.makeText(MainActivity.this, "Please fillup all the fields", Toast.LENGTH_SHORT).show();
+            Toast.makeText(MainActivity.this, "Please enter all the fields", Toast.LENGTH_SHORT).show();
         else {
             Boolean checkuserpass = DB.checkusernamepassword(user, pass);
             if (checkuserpass == true) {
@@ -67,16 +67,17 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
-    public void checkout(View v) {
-        if (reservationcount > 0) {
+    public void checkout(View v){
+        if(reservationcount>0) {
             setContentView(R.layout.checkoutsuccessful);
             reservationcount = 0;
-        } else if (reservationcount == 0) {
+        }
+        else if(reservationcount==0){
             setContentView(R.layout.checkoutunsuccessful);
         }
 
     }
-    public void signup(View v) {
+    public void signup(View v){
         setContentView(R.layout.new_user_registration);
         EditText username, password, repassword;
         Button signup, signin;
@@ -95,27 +96,27 @@ public class MainActivity extends AppCompatActivity {
                 String pass = password.getText().toString();
                 String repass = repassword.getText().toString();
 
-                if (user.equals("") || pass.equals("") || repass.equals(""))
+                if(user.equals("")||pass.equals("")||repass.equals(""))
                     Toast.makeText(MainActivity.this, "Please enter all the fields", Toast.LENGTH_SHORT).show();
-                else {
-                    if (pass.equals(repass)) {
+                else{
+                    if(pass.equals(repass)){
                         Boolean checkuser = DB.checkusername(user);
-                        if (checkuser == false) {
+                        if(checkuser==false){
                             Boolean insert = DB.insertData(user, pass);
-                            if (insert == true) {
+                            if(insert==true){
                                 Toast.makeText(MainActivity.this, "Registered successfully", Toast.LENGTH_SHORT).show();
                                 setContentView(R.layout.new_reservation);
-                            } else {
+                            }else{
                                 Toast.makeText(MainActivity.this, "Registration failed", Toast.LENGTH_SHORT).show();
                             }
-                        } else {
+                        }
+                        else{
                             Toast.makeText(MainActivity.this, "User already exists! please sign in", Toast.LENGTH_SHORT).show();
                         }
-                    } else {
+                    }else{
                         Toast.makeText(MainActivity.this, "Passwords not matching", Toast.LENGTH_SHORT).show();
                     }
-                }
-            }
+                } }
         });
 
         signin.setOnClickListener(new View.OnClickListener() {

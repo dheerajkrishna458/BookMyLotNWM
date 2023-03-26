@@ -49,14 +49,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Password" />
 
-
     <TextView
-        android:id="@+id/ForgetPassword"
+        android:id="@+id/newuser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="152dp"
         android:layout_marginTop="28dp"
-        android:text="Forget Password"
+        android:minHeight="48dp"
+        android:onClick="signup"
+        android:text="New User/Sign Up"
         android:textColor="@color/black"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/signinbutton" />
